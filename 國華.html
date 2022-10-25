@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台南好玩小幫手</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/apexcharts/apexcharts.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="main" style="margin-left:30px;">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <!-- <h3>台南好玩小幫手</h3> -->
+                            <!-- <p class="text-subtitle text-muted">A chart for user </p> -->
+                        </div>
+                        <div class="col-12 col-md-4 order-md-2 order-first">
+                            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">國華街</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="section">
+                    <div class="row">
+                        <!-- <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>國華街</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="assets/4.png" alt="國華街" width='400' height="400">
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>國華海安商圈</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="assets/4.png" alt="國華街" width='400' height="200">
+                                    <p></p>
+                                    <img src="assets/10.png" alt="國華街" width='400' height="200">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>即時車速</h4>
+                                </div>
+                                <div class="card-body"  style="height:125;margin-left: 50px;">
+                                    <img src="assets/6.jpg" alt="國華街"  width='125'height="125">
+                                    <!-- <div id="radialGradient"  ></div> -->
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>即時推薦分數</h4>
+                                </div>
+                                <div class="card-body"  style="height:125;">
+                                    <div id="radialGradient2"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>即時人流</h4>
+                                </div>
+                                <div class="card-body"  style="height:125;margin-left: 50px;">
+                                    <img src="assets/6.jpg" alt="國華街"  width='125'height="125">
+                                    <!-- <div id="radialGradient3"  ></div> -->
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>即時停車數</h4>
+                                </div>
+                                <div class="card-body"  style="height:125;">
+                                    <div id="radialGradient4"  ></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card" style="width:400px;height:500px">
+                                <div class="card-body">
+                                    
+                                    <h5 >國華海安商圈&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2分鐘</h5>
+
+                                    <small class="fw-600 c-grey-700 ">距離0.6公里</small>
+                                    <small class="pull-right c-grey-600 fsz-sm">車流:<font color="green" style="font-size:18px;">OK</font> 人流:<font color="green" style="font-size:18px;">OK</font> 停車位:48</small>
+                                    <div class="progress mT-10">
+                                        <div class="progress-bar bg-primary" role="progressbar"
+                                            aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width:94%">
+                                            推薦指數 94 分</div>
+                                    </div>
+                                    <br>
+                                    <small class="fw-600 c-grey-700 ">美食</small>
+                                    <br>
+                                    <small class="fw-600 c-grey-700 "><font color="#A86E00">富盛號碗粿 9折優惠序號:</font><font color="red">台南好玩小幫手 </font></small>
+                                    <br>
+                                    <small class="fw-600 c-grey-700 "><font color="#A86E00">泰成水果冰 9折優惠序號:</font><font color="red">台南好玩小幫手</font></small>
+                                    <br>
+                                    <small class="fw-600 c-grey-700 "><font color="#A86E00">炸機洋行 9折優惠序號:</font><font color="red">台南好玩小幫手</font></small>
+                                    <br>
+                                    <small class="fw-600 c-grey-700 "><font color="#A86E00">邱家小卷米粉 9折優惠序號:</font><font color="red">台南好玩小幫手</font></small>
+                                    <br>
+                                    <br>
+                                    <small class="fw-600 c-grey-700 ">台南美術館活動</small>
+                                    <br>
+                                    <small class="fw-600 c-grey-700 "><font color="#A86E00">順天聚藝‧共享珍寶</font></small>
+                                    <br>
+                                    <small class="fw-600 c-grey-700 "><font color="#A86E00">生存／抵抗：臺灣－加拿大原住民藝術展</font></small>
+                                    <br>
+                                    <small class="fw-600 c-grey-700 "><font color="#A86E00">鯤島新地圖─「熱蘭遮城400年」前導展</font></small>
+                                    
+                                    
+
+                                    
+                                    
+                                </div>
+                            </div>
+                           
+    
+                        </div>
+
+                    </div>
+                    <!-- <div class="col-md-2">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>即時車速</h4>
+                                </div>
+                                <div class="card-body" style="height:210px;">
+                                    <img src="assets/6.jpg" alt="國華街" width='180' height="210">
+                                    <div id="radialGradient"  ></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>即時推薦分數</h4>
+                                </div>
+                                <div class="card-body" style="height:210px;">
+                                    <div id="radialGradient2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>即時人流</h4>
+                                </div>
+                                <div class="card-body" style="height:210px;">
+                                    <img src="assets/6.jpg" alt="國華街" width='180' height="210">
+                                    <div id="radialGradient3"  ></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>即時停車數</h4>
+                                </div>
+                                <div class="card-body" style="height:210px;">
+                                    <div id="radialGradient4"></div>
+                                </div>
+                            </div>
+                        </div> -->
+            </div>
+            <!-- <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Line Chart</h4>
+                    </div>
+                    <div class="card-body">
+                        <div id="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Bar Chart</h4>
+                    </div>
+                    <div class="card-body">
+                        <div id="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Radial Gradient Chart</h4>
+                    </div>
+                    <div class="card-body">
+                        <div id="candle"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+            </section>
+        </div>
+
+
+    </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/dayjs/dayjs.min.js"></script>
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/person.js"></script>
+
+    <script src="assets/js/mazer.js"></script>
+</body>
+
+</html>
